@@ -1,3 +1,5 @@
+#Video Link: https://youtu.be/t2_Q2BRzeEE?si=KI6MnOI9QNqY_kD7
+
 #Taking user input
 name = input("Name: ")
 age = int(input("Age: "))
