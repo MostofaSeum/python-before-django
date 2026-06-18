@@ -20,4 +20,7 @@ ans: If is used to check a condition. Elif is used to check multiple conditions.
 ans: And is used when both of the conditions are true. Or is used when at least one of the conditions is true. Not is used to reverse the condition.
 
 8. What problems did you face during practice?
-ans: 
+ans: Negative indexing was a new topic for me. I was a little confused about how it works. But after practicing for a while i understood it.
+
+9. What did you learn today?
+ans: I learned about various functions and activities with string and conditional statements.
