@@ -1,7 +1,16 @@
 #Video link: https://youtu.be/qVyvmzFxF_o?si=_I4oJIXhRkWm_kCq
 
-tuple = (1,5,7,9,'a')
-print(type(tuple))
-print(tuple[1:4])
-print(tuple.index(9))
-print(tuple.count(1))
+# tuple = (1,5,7,9,'a')
+# print(type(tuple))
+# print(tuple[1:4])
+# print(tuple.index(9))
+# print(tuple.count(1))
+
+#practice 3
+# tup = ("C","D","A","A", "B","B","A")
+# print(tup.count("A"))
+
+#practice 4
+list = ["C","D","A","A", "B","B","A"]
+list.sort()
+print(list)
