@@ -14,8 +14,19 @@ Ans: break is a keyword that is used to exit a loop.
 Ans: continue is a keyword that is used to skip the current iteration of a loop.
 
 6. What is a function?
+Ans: Block of statement that perform a specific task
+
 7. Why should we use functions?
+Ans: To reduce the repetition of code and make the code more organized
+
 8. What is return value?
+Ans: Value that is returned by the function
+
 9. What is recursion?
+Ans: Recursion is a technique in which a function calls itself
+
 10. What problems did you face during practice?
+Ans: Maintaining proper indentation after colons (`:`) in functions and if-else statements. Mainly when used if else and their increment under a function. 
+
 11. What did you learn today?
+Ans: Understanding recursion base cases and managing variable scopes in functions.
