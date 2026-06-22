@@ -29,7 +29,10 @@ def sum(num):
 
 #Practice Question 2
 collections = ["apple", "banana","cherry"]
-def print_collection(list):
-    print(print_collection(list[(list.length-1)]))
+def print_collection(list,index):
+    if index == len(list):
+        return
+    print(list[index])
+    print_collection(list,index+1)
 
-print_collection(collections)
+print_collection(collections,0)
