@@ -32,13 +32,23 @@
 
 
 #search an element in the list
-list = [1,4,9,16,25,36,49,64,81,100]
-j =  int(input("Enter a number: "))
-i = 0
-while i < len(list):
-    if j == list[i]:
-        print("Element is at index",i)
-        break
+# list = [1,4,9,16,25,36,49,64,81,100]
+# j =  int(input("Enter a number: "))
+# i = 0
+# while i < len(list):
+#     if j == list[i]:
+#         print("Element is at index",i)
+#         break
+#     i += 1
+# else:
+#     print("Element is not present in the list")
+
+
+n = int(input("Enter a number: "))
+i = 1
+j = 0
+while i <= n:
+    j += i
     i += 1
-else:
-    print("Element is not present in the list")
+print("Sum of first", n, "natural numbers is", j)
+    

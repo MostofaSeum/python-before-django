@@ -31,6 +31,6 @@
 #     print(i)
 
 #practice question 3
-n = int(input("Enter a number: "))
-for i in range (1,11,1):
-    print(n,"*",i,"=",n*i)
+# n = int(input("Enter a number: "))
+# for i in range (1,11,1):
+#     print(n,"*",i,"=",n*i)
