@@ -19,3 +19,18 @@
 # for i in range(5):
 #     print(i)
 
+# for i in range(0,10,2):
+#     print(i)
+
+#practice question 1
+# for i in range(101):
+#     print(i)
+
+#practice question 2
+# for i in range(100,0,-1):
+#     print(i)
+
+#practice question 3
+n = int(input("Enter a number: "))
+for i in range (1,11,1):
+    print(n,"*",i,"=",n*i)
