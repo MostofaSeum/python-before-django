@@ -34,3 +34,11 @@
 # n = int(input("Enter a number: "))
 # for i in range (1,11,1):
 #     print(n,"*",i,"=",n*i)
+
+
+n = int(input("Enter a number: "))
+m =  1
+for i in range(1,n+1,1):
+    m = m * i
+print(m)
+    
