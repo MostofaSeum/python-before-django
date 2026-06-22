@@ -16,3 +16,41 @@ def cal_sum(a,b):
 # avg(10,20,30)
 
 
+hero = ["thor", "ironman", "hulk"]
+cities =["dhaka", "chittagong","sylhet","barishal","khulna"]
+def length(l):
+    return(len(l))
+
+# print(length(hero))
+# print(length(cities))
+
+def print_list(l):
+    for i in l:
+        print(i,end=" ")
+
+# print_list(hero)
+# print()
+# print_list(cities)
+
+#Function for factorial
+
+def factorial(i):
+    f=1
+    for j in range(1,i+1, 1):
+        f = f * j
+    return f
+
+# print(factorial(5))
+
+#Even Odd function
+
+def check(num):
+    if(num%2) == 0:
+        return "Even"
+    else:
+        return "Odd"
+           
+# print(check(11))
+
+
+
