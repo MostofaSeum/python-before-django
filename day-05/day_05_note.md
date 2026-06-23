@@ -20,7 +20,10 @@ Ans: Pip is a package manager for Python
 Ans: A virtual environment is a isolated environment for Python projects
 
 8. What is requirements.txt?
-Ans: 
+Ans: A text file where all the informations about installed packages are available. And another user can easily download packages using it.
+
 9. Which commands did you use today?
+Ans: pip install package-name, pip freeze > requirements.txt
 10. What problems did you face during practice?
+Ans: 
 11. What did you learn today?
