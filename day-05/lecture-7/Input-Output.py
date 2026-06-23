@@ -16,12 +16,17 @@
 # f.close()
 
 #Trying r+
-f = open("demo.txt", "r+")
-f.write("Overwriting")
-print(f.read())
-f.close()
+# f = open("demo.txt", "r+")
+# f.write("Overwriting")
+# print(f.read())
+# f.close()
 
 #Trying w+
-f = open("demo.txt", "w+")
-f.write("Overwriting the file with another line")
+# f = open("demo.txt", "w+")
+# f.write("new line 1")
+# f.close()
+
+#Trying a+
+f = open("demo.txt", "a+")
+f.write("Another new line 2")
 f.close()
