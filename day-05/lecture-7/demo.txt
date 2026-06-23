@@ -1,2 +1,1 @@
-This is the new line
-Just trying to add another appended line
+Overwriting sample line
