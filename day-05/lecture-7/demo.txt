@@ -1,1 +1,1 @@
-new line 1Another new line 2Another new line 2
+new line with W mode
