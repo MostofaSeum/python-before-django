@@ -24,6 +24,9 @@ Ans: A text file where all the informations about installed packages are availab
 
 9. Which commands did you use today?
 Ans: pip install package-name, pip freeze > requirements.txt
+
 10. What problems did you face during practice?
-Ans: 
+Ans: Understanding the concept of "+" was a little bit confusing.
+
 11. What did you learn today?
+Ans: File Handling & Virtual Environment & Packages
