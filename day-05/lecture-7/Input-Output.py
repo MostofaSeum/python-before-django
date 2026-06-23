@@ -1,1 +1,3 @@
-open('demo.txt', 'r')
+f = open("demo.txt", "r") 
+print(f.read()) 
+f.close()
