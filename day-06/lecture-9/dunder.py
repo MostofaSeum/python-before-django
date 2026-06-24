@@ -1,3 +1,5 @@
+#Video Link: https://youtu.be/bAwmZVJeO5s?si=0I5ZWyJuqtAvqenY
+
 class complex:
     def __init__(self, real, img):
         self.real = real
