@@ -14,7 +14,7 @@ Ans: __init__ is a special method that is called when an object is created. Used
 Ans: Self is a reference to the current instance or object of a class.
 
 6. What is inheritance?
-Ans: 
+Ans: When one class derives the properties and methods of another class called as inheritance.
 
 7. Why is OOP important for Django?
 8. How is a Django model related to a Python class?
