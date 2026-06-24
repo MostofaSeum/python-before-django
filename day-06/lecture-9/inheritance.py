@@ -1,18 +1,37 @@
-class car:
-    @staticmethod
-    def start():
-        print("Start")
-    @staticmethod
-    def stop():
-        print("Stop")
+#Video Link: https://youtu.be/bAwmZVJeO5s?si=0I5ZWyJuqtAvqenY
 
-class ToyotaCar(car):
-    def __init__(self,brand):
-        self.brand = brand
+# class car:
+#     @staticmethod
+#     def start():
+#         print("Start")
+#     @staticmethod
+#     def stop():
+#         print("Stop")
 
-class Fortuner(ToyotaCar):
-    def __init__(self,type):
-        self.type = type
+# class ToyotaCar(car):
+#     def __init__(self,brand):
+#         self.brand = brand
 
-c1 = Fortuner("SUV")
-c1.start()
+# class Fortuner(ToyotaCar):
+#     def __init__(self,type):
+#         self.type = type
+
+# c1 = Fortuner("SUV")
+# c1.start()
+
+
+#Multiple inheritence
+class a:
+    def printa(self):
+        print("I am A")
+class b:
+    def printb(self):
+        print("I am B")
+class c(a,b):
+    def printc(self):
+        print("I am C")
+
+obj = c()
+obj.printa()
+obj.printb()
+obj.printc()
