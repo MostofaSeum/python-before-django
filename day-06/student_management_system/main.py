@@ -1,0 +1,65 @@
+import os
+from student import Student
+
+# Dictionary to hold our student objects
+students_dict = {}
+FILE_NAME = "data.txt"
+
+def load_data():
+    if os.path.exists(FILE_NAME):
+        with open(FILE_NAME, "r") as f:
+            for line in f:
+                if line.strip():
+                    # Split the line into a list
+                    data = line.strip().split(",")
+                    student_id = int(data[0])
+                    # Create the object and add to dictionary
+                    students_dict[student_id] = Student(student_id, data[1], int(data[2]), data[3])
+
+def add_student():
+    try:
+        student_id = int(input("Enter Student ID: "))
+        if student_id in students_dict:
+            print("Student ID already exists!")
+            return
+        
+        name = input("Enter Name: ")
+        age = int(input("Enter Age: "))
+        major = input("Enter Major: ")
+        
+        # Create object and add to dictionary
+        new_student = Student(student_id, name, age, major)
+        students_dict[student_id] = new_student
+        print(f"Student {name} added successfully.")
+    except ValueError:
+        print("Invalid input. ID and Age must be integers.")
+
+def view_all_students():
+    if not students_dict:
+        print("No students found.")
+    else:
+        # Loop through dictionary values (which are objects)
+        for student in students_dict.values():
+            print(student)
+
+def search_student():
+    try:
+        search_id = int(input("Enter ID to search: "))
+        if search_id in students_dict:
+            print("Found:", students_dict[search_id])
+        else:
+            print("Student not found.")
+    except ValueError:
+        print("Invalid input.")
+
+def delete_student():
+    try:
+        search_id = int(input("Enter ID to delete: "))
+        if search_id in students_dict:
+            del students_dict[search_id]
+            print("Student deleted.")
+        else:
+            print("Student not found.")
+    except ValueError:
+        print("Invalid input.")
+
