@@ -63,3 +63,9 @@ def delete_student():
     except ValueError:
         print("Invalid input.")
 
+def save_data():
+    with open(FILE_NAME, "w") as f:
+        for student in students_dict.values():
+            f.write(student.to_csv())
+    print("Data saved successfully.")
+
