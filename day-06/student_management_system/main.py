@@ -69,3 +69,33 @@ def save_data():
             f.write(student.to_csv())
     print("Data saved successfully.")
 
+def main():
+    load_data()
+    
+    while True:
+        print("\n--- Student Management System ---")
+        print("1. Add Student")
+        print("2. View All Students")
+        print("3. Search Student")
+        print("4. Delete Student")
+        print("5. Save and Exit")
+        
+        choice = input("Enter your choice (1-5): ")
+        
+        if choice == "1":
+            add_student()
+        elif choice == "2":
+            view_all_students()
+        elif choice == "3":
+            search_student()
+        elif choice == "4":
+            delete_student()
+        elif choice == "5":
+            save_data()
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid choice, please select between 1 and 5.")
+
+if __name__ == "__main__":
+    main()
