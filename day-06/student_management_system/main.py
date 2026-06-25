@@ -1,19 +1,17 @@
 import os
 from student import Student
 
-# Dictionary to hold our student objects
+
 students_dict = {}
-FILE_NAME = "data.txt"
+
 
 def load_data():
-    if os.path.exists(FILE_NAME):
-        with open(FILE_NAME, "r") as f:
+    if os.path.exists("data.txt"):
+        with open("data.txt", "r") as f:
             for line in f:
                 if line.strip():
-                    # Split the line into a list
                     data = line.strip().split(",")
                     student_id = int(data[0])
-                    # Create the object and add to dictionary
                     students_dict[student_id] = Student(student_id, data[1], int(data[2]), data[3])
 
 def add_student():
@@ -27,10 +25,9 @@ def add_student():
         age = int(input("Enter Age: "))
         major = input("Enter Major: ")
         
-        # Create object and add to dictionary
         new_student = Student(student_id, name, age, major)
         students_dict[student_id] = new_student
-        print(f"Student {name} added successfully.")
+        print("Student " + name + " added successfully.")
     except ValueError:
         print("Invalid input. ID and Age must be integers.")
 
@@ -38,7 +35,7 @@ def view_all_students():
     if not students_dict:
         print("No students found.")
     else:
-        # Loop through dictionary values (which are objects)
+
         for student in students_dict.values():
             print(student)
 
@@ -64,7 +61,7 @@ def delete_student():
         print("Invalid input.")
 
 def save_data():
-    with open(FILE_NAME, "w") as f:
+    with open("data.txt", "w") as f:
         for student in students_dict.values():
             f.write(student.to_csv())
     print("Data saved successfully.")
